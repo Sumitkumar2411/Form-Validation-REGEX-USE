@@ -1,53 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form-validation</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <form id="registration-form">
-      <h2>Registration form</h2>
-      <div>
-        <i class="fa-solid fa-user"></i>
-        <input type="text" placeholder="Username" required id="username" />
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Validation</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <form id="registration-form">
+    <h2>Registration Form</h2>
 
-      <div>
-        <i class="fa-solid fa-address-book"></i>
-        <input type="text" placeholder="Number" required id="contact" />
-      </div>
+    <label for="username">
+      <i class="fa-solid fa-user"></i>
+      <input type="text" placeholder="Username" required id="username" />
+    </label>
 
-      <div>
-        <i class="fa-solid fa-envelope"></i>
-        <input type="text" placeholder="Mail" required id="mail" />
-      </div>
+    <label for="contact">
+      <i class="fa-solid fa-address-book"></i>
+      <input type="tel" placeholder="Number" required id="contact" />
+    </label>
 
-      <div>
-        <i class="fa-solid fa-lock"></i>
-        <input type="password" placeholder="Password" required id="password" />
-        <p id="msg"></p>
-      </div>
-      <p id="error"></p>
+    <label for="mail">
+      <i class="fa-solid fa-envelope"></i>
+      <input type="email" placeholder="Mail" required id="mail" />
+    </label>
 
-      <button type="submit" id="submitBtn">Submit</button>
+    <label for="password">
+      <i class="fa-solid fa-lock"></i>
+      <input type="password" placeholder="Password" required id="password" />
+    </label>
+    <p id="msg"></p>
+    <p id="error"></p>
 
-    </form>
-    <script src="./script.js"></script>
-  </body>
+    <button type="submit" id="submitBtn">Submit</button>
+  </form>
+
+  <script src="./script.js"></script>
+</body>
 </html>
