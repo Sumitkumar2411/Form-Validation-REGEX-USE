@@ -1,3 +1,10 @@
+## 📸 UI Preview
+
+![Form UI Screenshot](./screenShot.PNG)
+
+--- 
+
+
 # 🔐 Form Validation using Regex
 
 A simple yet secure HTML form with real-time validation using **JavaScript & Regular Expressions**. The form ensures strong password policies, valid name, email & contact formats — making it user-ready & robust.
@@ -31,6 +38,4 @@ Password -> /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$/
 
 ---
 
-## 📸 UI Preview
 
-![Form UI Screenshot](./screenShot.PNG)
